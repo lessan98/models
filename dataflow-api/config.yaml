@@ -12,6 +12,10 @@ components:
             $ref: "../model/host/host.yaml#/components/schemas/Host"
         dataflow:
             $ref: "../model/dataflow/dataflow.yaml#/components/schemas/Dataflow"
+        eth_nic_profiles:
+          type: array
+          items:
+            $ref: '../model/profiles/eth_nic_settings.yaml#/components/schemas/Profiles.Dataflow.HostManagement.EthNicSetting'
 
     GetConfigDetails:
       description: |-
